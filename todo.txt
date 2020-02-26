@@ -1,0 +1,14 @@
+720x720 minimum resolution 2:1 or 1:2 maximum ratio
+512 megabytes of RAM
+
+loop
+
+threads (>7)
+    main thread (120 (maybe 240?))
+        gameplay job system threads ?
+    input (480 / 960 / 1920)
+    rendering (subset of update thread - 120, 60, 30, 24, 20, 12, 10, 8, 5)
+    sound (120)
+    loading resources (as needed)
+    generating (maps, items? as needed)
+    networking
